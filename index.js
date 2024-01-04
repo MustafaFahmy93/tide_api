@@ -4,7 +4,7 @@ import cors from "cors";
 import { geojsonData } from "./tideData.js";
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(cors());
 app.use(compression());
