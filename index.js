@@ -14,6 +14,14 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
+app.get("/", (req, res) => {
+  try {
+       res.json({result:"ok"});
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 app.get("/tide_data", (req, res) => {
   try {
     const maxLevel = parseInt(req.query.level_ps_r);
@@ -36,3 +44,4 @@ app.get("/tide_data", (req, res) => {
     console.log(error);
   }
 });
+
