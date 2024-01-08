@@ -82,7 +82,7 @@ app.get('/getRating', async (req, res) => {
         'Accept-Language': 'en-US',
         'Accept': 'application/json;version=2.0',
         'Content-Type': 'application/json',
-        'exp-api-key': '292f5f6a-5fe0-4c02-a321-daa4868c99ec',
+        'exp-api-key': process.env.API-KEY,
       },
     });
     result = response.data;
@@ -128,7 +128,7 @@ app.post('/getRatings', async (req, res) => {
             'Accept-Language': 'en-US',
             'Accept': 'application/json;version=2.0',
             'Content-Type': 'application/json',
-            'exp-api-key': '292f5f6a-5fe0-4c02-a321-daa4868c99ec',
+            'exp-api-key': process.env.API-KEY,
           },
         });
 
